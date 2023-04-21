@@ -111,3 +111,39 @@ Cada una de estas carpetras conytendrá los archivos que correspondan a su clasi
 * MiVistaView
 * MiControladorController
 
+# Introduccion a Entity Framework y ADO.NET
+
+## ¿Qué es Entity framework?
+
+Entity framework. Es una tecnología desarrollada por Microsoft, que a través de ADO.NET genera un conjunto de objetos que están directamente ligados a una Base de Datos, permitiendo a los desarrolladores manejar dichos objetos en lugar de utilizar lenguaje SQL contra la Base de Datos.
+
+Entity Framework permite a los programadores trabajar con datos en forma de objetos y propiedades específicos del dominio, por ejemplo, con clientes y direcciones, sin tener que pensar en las tablas de las bases de datos subyacentes y en las columnas en las que se almacenan estos datos.
+
+## ¿Qué es ADO.NET?
+
+ADO .NET es una arquitectura que permite el acceso y la manipulación eficiente de los datos mediante un conjunto de clases, interfaces y estructuras, permitiendo la creación de aplicaciones distribuidas. Esta tecnología es parte de la biblioteca de clases ofrecidas por el Microsoft .NET Framework. Su componente principal es la clase DataSet, que almacena los datos provenientes de una fuente. 
+
+### La clase Dataset
+
+La clase DataSet consiste en una colección de objetos "DataTable", formados por filas y columnas, que se pueden relacionar unas con otras, con objetos llamados "DataRelation". También contiene información acerca de las claves principales y foráneas, que permiten estas relaciones.
+
+### Otros objetos de ADO.NET
+* El objeto Connection proporciona conectividad a la fuente de los datos, como Microsoft SQL Server, Oracle, SQLite, MySQL, etc. 
+* El objeto Command permite tener acceso a comandos de base de datos para devolver datos, modificar, eliminar, ejecutar procedimientos y enviar o recuperar información sobre parámetros. 
+* El objeto DataReader para su lectura, realiza esta operación un registro a la vez. 
+* Y finalmente el objeto DataAdapter que proporciona el puente entre el objeto DataSet y la fuente de los datos, que mediante comandos SQL, permite almacenar los mismos. En otras palabras, un DataSet es llenado a partir de una base de datos gracias a un objeto DataAdapter que inicia los comandos descritos anteriormente.
+
+Cabe destacar se tendrá que elegir si usar un DataAdapter o un DataReader, dependiendo de lo que se necesite. 
+
+Se usa un DataAdapter cuando:
+
+* Se necesitan almacenar datos en la memoria caché para manipularlos. Si sólamente se necesita leer los datos de una consulta es conveniente utilizar un DataReader.
+
+* Se necesita realizar el procesamiento exhaustivo de los datos sin necesidad de tener una conexión abierta con la fuente de los datos o si se desea tener un acceso remoto a los datos gracias a un servicio web XML.
+
+Al establecer conexiones con el origen de datos, cada proveedor de datos .NET Framework tendrá su propio objeto DbConnection. Entre ellos:
+
+* SqlConnection, para SQL Server.
+* OleDbConnection, pars el proveedor OLE DB.
+* OracleConnection, para base de datos de Oracle.
+* OdbcConnection, para el proveedor ODBC.
