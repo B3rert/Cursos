@@ -147,3 +147,36 @@ Al establecer conexiones con el origen de datos, cada proveedor de datos .NET Fr
 * OleDbConnection, pars el proveedor OLE DB.
 * OracleConnection, para base de datos de Oracle.
 * OdbcConnection, para el proveedor ODBC.
+
+# Introducción a las API REST
+
+## ¿Qué es una API?
+
+API es el acrónimo de interfaz de programación de aplicaciones (application programming interface en inglés). Es un conjunto de reglas bien definidas que se utilizan para especificar formalmente la comunicación entre dos componentes de software.
+
+## ¿Qué es una API REST?
+
+Una API REST es una interfaz de comunicación entre sistemas de información que usa el protocolo de transferencia de hipertexto (hypertext transfer protocol o HTTP, por su siglas en inglés) para obtener datos o ejecutar operaciones sobre dichos datos en diversos formatos, como pueden ser XML o JSON.
+
+## Métodos HTTP
+
+Los métodos HTTP, son el formato de comunicación entre el cliente y servidor web. Maneja varios varios formatos: POST, GET, PUT, DELETE, OPTIONS, HEAD, PATCH, etc.
+
+* GET: listado de recursos. Detalle de un solo recurso.
+* POST: creación de un recurso.
+* PUT: modificación total de un recurso.
+* DELETE: eliminación de un recurso. 
+
+## Estados HTTP
+
+Son aquellos estatus de respuesta propios del protocolo HTTP que fueron tomados para informar sobre el resultado de la operación solicitada. Los más comunes en API REST son:
+
+* 200 - OK
+* 201 - Created
+* 204 - No Content
+* 400 - Bad Request
+* 401 - Unauthorized
+* 403 - Forbidden
+* 404 - Not Found
+* 500 - Internal Server Error
+
