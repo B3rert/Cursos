@@ -4,7 +4,7 @@
 
 ### Descargar e instalar Visual Studio 
 
-Si ya tienes instalado visual studio 2022 abre **Visual Studio Installer** para verificar las configuraciones necesarias, si no tinens **Viusal Studio Installer** descargalo a continuacion.
+Si ya tienes instalado visual studio 2022 abre **Visual Studio Installer** para verificar las configuraciones necesarias, si no tinens **Viusal Studio Installer** descargalo a continuación.
 
 1. Visita la [página oficial](https://visualstudio.microsoft.com/es/downloads/) y descarga el instalador.
    
@@ -12,7 +12,7 @@ Si ya tienes instalado visual studio 2022 abre **Visual Studio Installer** para 
 
 2. Ejecuta el programa que se acaba de descargar. Si ya tienes instalado **Visual Studio 2022** presiona **Modificar**. Si es la primera instalación presiona instalar.
 
-3. A continuacion verifica que la opcion **Desarrollo de ASP.NET y web** esté marcada e inicia la instalación.
+3. A continuación verifica que la opción **Desarrollo de ASP.NET y web** esté marcada e inicia la instalación.
 
 ![Configurar .NET CORE](pictures/configuracionvisual.png)
 
