@@ -247,6 +247,7 @@ FROM
 ```
 
 ## Insert product
+
 ```sql
 INSERT INTO
   Productos (pro_nombre, pro_descripcion, pro_precio)
@@ -254,13 +255,59 @@ VALUES
   ('USB 64 GB', 'Memoria USB', 200.00)
 ```
 
-````sql
+```sql
 CREATE PROCEDURE POST_PRODUCT 
-@ pro_nombre VARCHAR(50),
-@ pro_descripcion VARCHAR(200),
-@ pro_precio DECIMAL(8, 2) AS
+  @pro_nombre VARCHAR(50),
+  @pro_descripcion VARCHAR(200),
+  @pro_precio DECIMAL(8, 2) AS
 INSERT INTO
   Productos (pro_nombre, pro_descripcion, pro_precio)
 VALUES
-  (@ pro_nombre, @ pro_descripcion, @ pro_precio)
+  (@pro_nombre, @pro_descripcion, @pro_precio)
+```
+
+## Update product
+
+```sql
+UPDATE
+  Productos
+SET
+  pro_nombre = 'M2 500 GB',
+  pro_descripcion = 'Unidad m2 500 GB',
+  pro_precio = 1000.50
+WHERE
+  pro_codigo = 6
+```
+
+```sql
+CREATE PROCEDURE PUT_PRODUCT 
+  @pro_codigo INT,
+  @pro_nombre VARCHAR(50),
+  @pro_descripcion VARCHAR(200),
+  @pro_precio DECIMAL(8, 2) AS
+UPDATE
+  Productos
+SET
+  pro_nombre = @pro_nombre,
+  pro_descripcion = @pro_descripcion,
+  pro_precio = @pro_precio
+WHERE
+  pro_codigo = @pro_codigo
+```
+
+
+```sql
+DELETE FROM
+  Productos
+WHERE
+  pro_codigo = 6
+```
+
+```sql
+CREATE PROCEDURE DELETE_PRODUCT 
+  @pro_codigo INT AS
+DELETE FROM
+  Productos
+WHERE
+  pro_codigo = @pro_codigo
 ```
