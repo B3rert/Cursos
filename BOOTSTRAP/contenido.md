@@ -1,4 +1,4 @@
-# Introducción a Bootrap
+# Introducción a Bootstrap
 
 ## ¿Qué es Bootstrap y para qué sirve bootstrap?
 
